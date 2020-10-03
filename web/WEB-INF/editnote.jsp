@@ -15,11 +15,12 @@
         <h1>Simple Note Keeper</h1>
         <h2>Edit Note</h2>
         
-        <p>Title: </p><input id="title" type="text">
+        <form method="post">
+        <p>Title: </p><input name="title" type="text" value="${data.getTitle()}">
         <br>
-        <p>Contents:</p><textarea id="content" rows="4" cols="50"></textarea>
+        <p>Contents:</p><textarea name="content" rows="4" cols="50">${data.getContent()}</textarea>
         <br>
         <button type="submit">Save</button>
-    
+        </form>
     </body>
 </html>

@@ -34,4 +34,8 @@ public class Note implements Serializable{
     public String getContent() {
         return content;
     }
+
+    public String title() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
